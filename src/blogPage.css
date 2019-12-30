@@ -1,0 +1,8 @@
+.sidebar{
+    width:15rem;
+    position: fixed;
+}
+.topbar{
+    position: static;
+    z-index: 1;
+}

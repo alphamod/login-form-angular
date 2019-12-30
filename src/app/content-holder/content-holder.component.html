@@ -1,0 +1,27 @@
+<header>
+    <div class="topbar shadow-sm w-100">
+        <nav class="navbar navbar-expand-md navbar-light bg-dark w-100">
+            <ul class="w-100 navbar-nav mr-auto">
+                <li class="nav-item"><a [routerLink]="['/holder']" class="nav-link text-warning brand navbar-brand p-0 m-0"><h1 class="p-0 m-0">MY BLOGS</h1></a>
+                </li>
+                <li class="ml-auto pr-3 nav-item"><a [routerLink]="['/']" class="text-warning text-decoration-none nav-link">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar shadow-sm mt-3">
+        <ul class="nav vh-100 bg-dark flex-column pt-5">
+            <li class="nav-item btn bg-secondary rounded-0 "><a [routerLink]="['/holder/list-blog']" class="nav-item text-decoration-none text-warning">View Blogs</a></li>
+            <li class="nav-item btn bg-secondary rounded-0"><a [routerLink]="['/holder/create-blog']" class="nav-item text-decoration-none text-warning">Create Blog</a></li>
+            <li class="nav-item btn bg-secondary rounded-0"><a [routerLink]="['/']" class="nav-item text-decoration-none text-warning">Log Out</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="offset-2">
+            <div class="container-fluid mt-5">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

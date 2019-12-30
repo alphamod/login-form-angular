@@ -1,0 +1,24 @@
+<div class="container-fluid w-100 mt-5">
+    <div class="row w-100">
+        <div class="col-xl-8 mt-4 w-100">
+                <table class="w-100 table table-striped ">
+                    <thead class=" w-100 thead-dark w-100">
+                        <tr>
+                            <th>
+                                <h3>Blogs</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of bloglist">
+                            <td>
+                                <h3>{{row.blogName}}</h3>
+                                <h5>{{row.blogSubject}}</h5>
+                                <p>{{row.blogContent}}</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</div>
